@@ -1,0 +1,48 @@
+.skills {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.skill {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default grid setup */
+  gap: 20px;
+}
+
+.skillItem {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .skillList {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+
+  .skillItem {
+    font-size: 1.1rem; /* Slightly smaller font size on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skillList {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .skillItem {
+    font-size: 1rem; /* Further reduce font size for small screens */
+  }
+
+  .skill {
+    font-size: 2rem; /* Smaller heading font on small screens */
+  }
+}

@@ -1,0 +1,112 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  margin-left: 15px;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.navList li a:hover {
+  text-decoration: underline;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.body {
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .navList.active {
+    display: flex;
+  }
+
+  .navList li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navList li a {
+    font-size: 16px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 16px;
+  }
+
+  .navList li a {
+    font-size: 14px;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+}

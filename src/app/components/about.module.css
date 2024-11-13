@@ -1,0 +1,40 @@
+.about {
+  padding: 50px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.green {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .green {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .green {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}
