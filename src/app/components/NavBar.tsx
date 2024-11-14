@@ -7,6 +7,8 @@ const Navbar = () => {
       <div className={styles.logo}>
         <h1>Portfolio Web</h1>
       </div>
+      <input type="checkbox" id="menu-toggle" className={styles.menuToggle} />
+      <label htmlFor="menu-toggle" className={styles.menuIcon}>☰</label>
       <ul className={styles.navList}>
         <li>
           <Link href="#home">Home</Link>
